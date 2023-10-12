@@ -44,6 +44,7 @@ function randomlinks(){
     var random = Math.floor(Math.random()*urls.length);
     window.open(urls[random], '_blank')
     }
+    
     function show(){
       var x = document.getElementById("help");
       if (x.style.display === "none") {
@@ -61,6 +62,7 @@ function randomlinks(){
         x.style.display = "none";
       }
     }
+
     function showFluency(){
       var x = document.getElementById("eng");
       if (x.style.display === "none") {
