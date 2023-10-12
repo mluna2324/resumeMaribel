@@ -1,58 +1,229 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 12px;
-    max-width: 960px;
+@font-face { 
+    font-family: 'neutro';
+    src: url('https://teeneylovesyou.net/fonts/neutro/Neutro.woff2') format('woff2'),
+    url('https://teeneylovesyou.net/fonts/neutro/Neutro.woff') format('woff'),
+    url('https://teeneylovesyou.net/fonts/neutro/Neutro-ExtraBold.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'archivo';
+    src: url('https://teeneylovesyou.net/fonts/archivo/ArchivoBlack-Regular.woff2') format('woff2'),
+    url('https://teeneylovesyou.net/fonts/archivo/ArchivoBlack-Regular.woff') format('woff'),
+    url('https://teeneylovesyou.net/fonts/archivo/ArchivoBlack-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+  }
+  body{
+    position: relative;
+  }
+  /* html{
+    height: 100%
+  } */
+  header{
+    font-family: neutro, Arial, Helvetica, sans-serif;
+    font-size: 28pt;
+  }
+  .left{
+    width: 25%;
+    height: auto;
+    /* background-color: aqua; */
+    display: inline-block;
+    float: left;
+    box-shadow: 0px 0px 0px 1px black inset;
+  }
+  .nav{
+    width: 100%;
+    height: auto;
+    display: block;
+    box-shadow: 0px 0px 0px 1px black inset;
+    background-color: white;
+  }
+  .right{
+    width:75%;
+    height: auto;
+    /* background-color: pink; */
+    display: block;
+    float: right;
+    /* box-shadow: 0px 0px 0px 1px black inset; */
+  }
+  .columnA{
+    width: 50%;
+    float: left;
+    height: auto;
+    /* background-color: plum; */
+    box-shadow: 0px 0px 0px 1px black inset;
+  }
+  .columnB{
+    width: 50%;
+    float: right;
+    height: auto;
+    /* background-color: antiquewhite; */
+    box-shadow: 0px 0px 0px 1px black inset;
+  }
+  p{
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    margin-top: 1px;
+  }
+  
+  p3{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12pt;
+    padding: 0px;
+  }
+  h{
+    font-weight: normal;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+    margin-left: 5px;
+    display: inline-block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }
+  h1{
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    margin-left: 5px;
+  }
+  .dropdown {
+  position: relative;
+  display: inline-block;
+  }
+  .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  width: 165px;
+  box-shadow: 0px 0px 0px 1px black inset;
+  z-index: 1;
+  }
+  .dropdown:hover .dropdown-content {
+  display: block;
+  }
+  p1{
+    margin-left: 5px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10pt;
+    color: grey;
+    display:block;
+  }
+  a{
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11pt;
+  }
+  a:visited{
+    color: black;
+  }
+  .skillText{
+  font-size: 11pt;
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  }
+  a:hover{
+    cursor: pointer;
+  }
+  .dropSkill{
+    display: none;
+  }
+  .dropSkillBox{
     margin: auto;
-}
-h1 {
-    font-size: 3em;
-    letter-spacing: .6em;
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-h2 {
-    font-size: 1.5em;
-    padding-bottom: 1em;
-}
-
-h3 {
-    font-size: 1em;
-    padding-bottom: 1em;
-}
-
-main { 
-    display: grid;
-    grid-template-columns: 40% 60%;
-    margin-top: 3em;
-}
-header {
-    text-align: center;
-    margin: auto 2em;
-}
-
-section {
-    margin: auto 1em 4em 2em;
-}
-
-i {
-    margin-right: .5em;
-}
-
-p {
-    margin: .2em auto
-}
-
-hr {
-    border: none;
-    background-color: lightgray;
-    height: 1px;
-}
-
-h1, h2, h3 {
-    font-weight: 100;
-    margin-bottom: 0;
-}
-#mainLeft {
-    border-right: 1px solid lightgray;
-}
+    height: auto;
+    width: 90%;
+    margin-bottom: 5px;
+    box-shadow: 0px 0px 0px 1px black inset;
+  }
+  .html{
+    font-size: 11pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    height: 13pt;
+    width: 70%;
+    background-color: black;
+    /* margin-left: -7px; */
+    padding-left: 5%;
+  }
+  .cpp{
+    font-size: 11pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    height: 13pt;
+    width: 90%;
+    background-color: black;
+    /* margin-left: -7px; */
+    padding-left: 5%;
+  }
+  .css{
+    font-size: 11pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    height: 13pt;
+    width: 70%;
+    background-color: black;
+    /* margin-left: -7px; */
+    padding-left: 5%;
+  }
+  .js{
+    font-size: 11pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    height: 13pt;
+    width: 50%;
+    background-color: black;
+    /* margin-left: -7px; */
+    padding-left: 5%;
+  }
+  .eng{
+    font-size: 11pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    height: 13pt;
+    width: 95%;
+    background-color: black;
+    /* margin-left: -7px; */
+    padding-left: 5%;
+  }
+  .esp{
+    font-size: 11pt;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    height: 13pt;
+    width: 65%;
+    background-color: black;
+    /* margin-left: -7px; */
+    padding-left: 5%;
+  }
+  .fluency{
+    font-size: 9pt;
+    font-family: Arial, Helvetica, sans-serif;
+    display: none;
+    color: white;
+    text-align: right;
+  }
